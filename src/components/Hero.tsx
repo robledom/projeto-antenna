@@ -1,7 +1,8 @@
 import React from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import HeroImage from '@/assets/f0223742-2263-4b43-8e92-351490804d2f.png';
+
+// A linha de importação da imagem foi REMOVIDA
 
 interface HeroProps {
   handlePackageSelect: () => void;
@@ -24,7 +25,8 @@ const Hero: React.FC<HeroProps> = ({ handlePackageSelect }) => {
     <section className="relative bg-white pt-8 md:py-12">
       <div 
         className="absolute inset-0 bg-no-repeat bg-center bg-contain opacity-10 md:hidden"
-        style={{ backgroundImage: `url(${HeroImage})` }}
+        // O caminho da imagem foi ALTERADO aqui
+        style={{ backgroundImage: `url('/assets/f0223742-2263-4b43-8e92-351490804d2f.png')` }}
       ></div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -76,7 +78,8 @@ const Hero: React.FC<HeroProps> = ({ handlePackageSelect }) => {
               <img 
                 alt="Broadwave Antenna" 
                 className="relative z-10" 
-                src={HeroImage} 
+                // O caminho da imagem foi ALTERADO aqui também
+                src="/assets/f0223742-2263-4b43-8e92-351490804d2f.png" 
               />
             </div>
           </div>
