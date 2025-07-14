@@ -2,8 +2,6 @@ import React from "react";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// A linha de importação da imagem foi REMOVIDA
-
 interface HeroProps {
   handlePackageSelect: () => void;
 }
@@ -25,7 +23,7 @@ const Hero: React.FC<HeroProps> = ({ handlePackageSelect }) => {
     <section className="relative bg-white pt-8 md:py-12">
       <div 
         className="absolute inset-0 bg-no-repeat bg-center bg-contain opacity-10 md:hidden"
-        // O caminho da imagem foi ALTERADO aqui
+        // O caminho da imagem foi ALTERADO para um caminho público
         style={{ backgroundImage: `url('/assets/f0223742-2263-4b43-8e92-351490804d2f.png')` }}
       ></div>
 
