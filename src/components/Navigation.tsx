@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
-// O CAMINHO DA IMAGEM FOI CORRIGIDO NA LINHA ABAIXO
-import BroadwaveLogo from '../assets/09ff3de9-a35b-4eb9-81ed-32c90613a37b.png';
 
 interface NavigationProps {
   handlePackageSelect?: () => void;
@@ -30,7 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({ handlePackageSelect }) => {
           <img 
             alt="Broadwave Antenna" 
             className="h-8 md:h-10 cursor-pointer" // Tamanho responsivo
-            src={BroadwaveLogo} 
+            src="/assets/09ff3de9-a35b-4eb9-81ed-32c90613a37b.png" 
           />
         </Link>
         <Button 
