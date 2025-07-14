@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
-import BroadwaveLogo from '../assets/09ff3be9-a35b-4eb9-81ed-32c90613a37b.png';
+
+// A linha de importação da imagem foi REMOVIDA
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -26,7 +27,8 @@ const Footer = () => {
           {/* Coluna 1: Logo e Copyright */}
           <div className="flex flex-col items-center md:items-start space-y-4">
             <button onClick={() => handleNavigateAndScroll()} className="hover:opacity-80 transition-opacity duration-200">
-              <img src={BroadwaveLogo} alt="Broadwave Antenna Logo" className="h-16" />
+              {/* O caminho da imagem foi ALTERADO para um caminho público */}
+              <img src="/assets/09ff3de9-a35b-4eb9-81ed-32c90613a37b.png" alt="Broadwave Antenna Logo" className="h-16" />
             </button>
             <p className="text-sm">© 2025 getbroadwaveantenna.com. All Rights Reserved.</p>
           </div>
@@ -63,10 +65,10 @@ const Footer = () => {
         
         {/* Disclaimer com design e conteúdo corretos */}
         <div className="mt-12 pt-8 border-t border-gray-300">
-           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-gray-800 space-y-2 max-w-4xl mx-auto">
-            <p className="font-bold text-blue-900 text-base">📢 Important Disclosure:</p>
-            <p>This site participates in affiliate marketing programs. By clicking on our links and making a purchase, we may receive a commission at no additional cost to you. All transactions, shipping, and support are managed by the manufacturer/seller. The product information presented here is based on content from the official sales page and producer materials.</p>
-          </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-sm text-gray-800 space-y-2 max-w-4xl mx-auto">
+             <p className="font-bold text-blue-900 text-base">📢 Important Disclosure:</p>
+             <p>This site participates in affiliate marketing programs. By clicking on our links and making a purchase, we may receive a commission at no additional cost to you. All transactions, shipping, and support are managed by the manufacturer/seller. The product information presented here is based on content from the official sales page and producer materials.</p>
+            </div>
         </div>
       </div>
     </footer>
